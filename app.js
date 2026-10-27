@@ -22,4 +22,4 @@ function finish(){const order=["witch","vampire","ghost","cat"];const key=order.
 $("#startBtn").onclick=()=>{show("quiz");render()};
 $("#backBtn").onclick=()=>{if(!index)return;index--;scores[history.pop()]--;render()};
 $("#restartBtn").onclick=()=>{index=0;scores={witch:0,vampire:0,ghost:0,cat:0};history=[];show("home")};
-$("#shareBtn").onclick=async()=>{const r=results[$("#result").dataset.key];const text=`我的万圣节午夜人格是「${r.name}」${r.icon}\n${r.tag}\n${r.copy}\n来测测你藏在午夜里的另一面！`;try{await navigator.clipboard.writeText(text);$("#toast").textContent="✦ 结果文案已复制，去吓朋友一跳吧"}catch{window.prompt("复制你的结果：",text)}setTimeout(()=>$("#toast").textContent="",3000)};
+$("#shareBtn").onclick=async()=>{const r=results[$("#result").dataset.key];const text=`我的万圣节午夜人格是「${r.name}」${r.icon}\n${r.tag}\n${r.copy}\n来测测你藏在午夜里的另一面！\nhttps://nemuiikuma.github.io/Halloween/`;try{await navigator.clipboard.writeText(text);$("#toast").textContent="✦ 结果与测试链接已复制，去吓朋友一跳吧"}catch{window.prompt("复制你的结果：",text)}setTimeout(()=>$("#toast").textContent="",3000)};
