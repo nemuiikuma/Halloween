@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0a0710">
+  <meta name="description" content="回答 7 道万圣节情境题，揭开你灵魂深处的怪诞人格。">
+  <title>午夜人格局｜万圣节人格测试</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="moon" aria-hidden="true"><span></span></div>
+  <header class="topbar"><a class="brand" href="#" aria-label="回到首页"><i>☾</i> MIDNIGHT BUREAU</a><span>CASE NO. 1031</span></header>
+  <main id="app">
+    <section class="screen hero active" id="home">
+      <div class="eyebrow">万圣节限定 · 灵魂识别实验</div>
+      <h1>午夜<br><em>人格局</em></h1>
+      <p class="lede">城市入睡以后，真正的你才刚刚醒来。<br>回答 7 个直觉问题，领取你的午夜身份。</p>
+      <button class="primary" id="startBtn">推开那扇门 <span>↗</span></button>
+      <div class="fineprint"><span>7 道题</span><span>约 90 秒</span><span>凭第一直觉</span></div>
+      <div class="mascot" aria-hidden="true"><div class="hat"></div><div class="ghost"><b>•</b><b>•</b></div></div>
+    </section>
+
+    <section class="screen quiz" id="quiz" aria-live="polite">
+      <div class="quiz-meta"><span id="stepLabel">01 / 07</span><div class="track"><i id="progress"></i></div><button id="backBtn" aria-label="上一题">←</button></div>
+      <div class="question-wrap">
+        <div class="question-number" id="bigNumber">01</div>
+        <p class="scene" id="scene"></p>
+        <h2 id="question"></h2>
+        <div class="answers" id="answers"></div>
+      </div>
+    </section>
+
+    <section class="screen result" id="result">
+      <div class="result-stamp">SOUL IDENTIFIED</div>
+      <p class="result-kicker">你的午夜人格是</p>
+      <div class="sigil" id="resultIcon">☾</div>
+      <h2 id="resultName"></h2>
+      <p class="result-tag" id="resultTag"></p>
+      <p class="result-copy" id="resultCopy"></p>
+      <div class="traits" id="traits"></div>
+      <div class="result-actions">
+        <button class="primary" id="shareBtn">复制结果文案 <span>✦</span></button>
+        <button class="secondary" id="restartBtn">再测一次</button>
+      </div>
+      <p class="share-toast" id="toast" role="status"></p>
+    </section>
+  </main>
+  <footer><span>午夜人格局 © 2026</span><span>仅供娱乐，不作为心理诊断</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
