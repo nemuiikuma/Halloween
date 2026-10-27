@@ -1,0 +1,4 @@
+.lobby-back{display:inline-block;margin-bottom:26px;color:#bdb4c7;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:.08em;border-bottom:1px solid #50445a;padding-bottom:6px;transition:.2s}
+.lobby-back:hover{color:var(--acid);border-color:var(--acid)}
+.result-back{margin:4px 0 18px}
+@media(max-width:680px){.lobby-back{margin-bottom:22px}.result-back{margin-top:8px}}
